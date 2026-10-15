@@ -13,7 +13,7 @@ body {
 .ap-logo {
     position: relative;
     right: 10vh;
-    left: 167vh;
+    left: 164vh;
     bottom: 8vh;
 
     height: 6vh;
@@ -52,9 +52,9 @@ body {
 }
 
 #carousel-div {
-    justify-items: center;
     justify-self: center;
     color: black;
+    position: sticky;
     a {
         padding: 5px;
         background-color: gold;
@@ -93,11 +93,15 @@ body {
 }
 
 
+
+
 #navbar-left {
-    text-align: center;
+    h2 {
+        text-align: center;
+    }
     background-color: gold;
     height: 100vh;
-    width: 80%;
+    width: 75%;
     display: inline-block;
     position: sticky !important;
 
@@ -108,6 +112,12 @@ body {
         display: flex;
         padding: 40px;
         text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited {
+        color: black;
     }
 
     a:hover {
@@ -115,7 +125,7 @@ body {
         cursor: pointer;
     }
     #internal-courses {
-
+        text-align: center; !important
     }
 }
 
@@ -129,4 +139,22 @@ body {
         padding: 10px;
         text-align: center;
     }
+    text-align: center;
+}
+
+#burger1 {
+    font-size: 30px;
+    text-align: left;
+    border: black solid 1px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#burger2 {
+    font-size: 30px;
+    text-align: left;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+    color: white;
 }

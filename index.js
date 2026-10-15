@@ -38,10 +38,29 @@ function leftButton() {
 function coursesNav() {
     let sidebarNav = document.getElementById("internal-courses")
     let shown = sidebarNav.style.display;
-    console.log(shown)
     if (shown === "") {
         sidebarNav.style.display = "block";
     } else {
         sidebarNav.style.display = "";
     }
+}
+
+function burger() {
+    let sidebarNav = document.getElementById("navbar-left")
+    let shown = sidebarNav.style.display;
+    if (shown === "inline-block") {
+        sidebarNav.style.display = "none";
+        let hiddenBurger = document.getElementById("burger2");
+        hiddenBurger.style.display = "flex";
+    } else {
+        sidebarNav.style.display = "inline-block";
+    }
+}
+
+function burger2() {
+    let sidebarNav = document.getElementById("navbar-left")
+    let shown = sidebarNav.style.display;
+    sidebarNav.style.display = "inline-block";
+    let hiddenBurger = document.getElementById("burger2");
+    hiddenBurger.style.display = "none";
 }
